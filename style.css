@@ -1,0 +1,92 @@
+@import url('https:fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green: #27ae60;
+    --black:#2c2c64;
+}
+
+*{
+    font-family: 'numito', sans-serif;
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+
+.header-1{
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.logo{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.logo i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+
+
+.header-1 .search-box-container{
+    display: flex;
+    height: 5rem;
+}
+
+.header-1 .search-box-container label:hover{
+    background: var(--black);
+}
+
+.header-2.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+.header-2 .navbar a{
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+    color: var(--black);
+}
+
+.header-2 .icons a{
+    font-size: 3rem;
+    color: var(--black);
+    padding-left: 1rem;
+}
+
+#menu-bar{
+    font-size: 3rem;
+    border-radius: .5rem;
+    border: .1rem solid var(--black);
+    padding: .8rem 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
